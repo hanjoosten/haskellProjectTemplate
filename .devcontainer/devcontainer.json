@@ -8,7 +8,7 @@
         "ghcr.io/devcontainers-contrib/features/haskell:2": {
             "ghcVersion": "9.4.7",
             "cabalVersion": "3.6.2.0",
-            "globalPackages": "hlint stylish-haskell",
+            "globalPackages": "hlint stylish-haskell haskell-dap ghci-dap haskell-debug-adapter",
             "installHLS": true,
             "downgradeGhcToSupportHls": true,
             "installStack": true,
@@ -19,7 +19,8 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "haskell.haskell"
+                "haskell.haskell",
+                "phoityne.phoityne-vscode"
             ],
             "settings": {
                 "editor.formatOnSave": true,
