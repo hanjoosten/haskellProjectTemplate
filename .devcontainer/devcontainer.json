@@ -1,12 +1,19 @@
 {
-    "name": "Editor",
+    "name": "Haskell (via ghcup)",
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
         "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
             "packages": "pkg-config"
         },
         "ghcr.io/devcontainers-contrib/features/haskell:2": {
-            "globalPackages": "hlint stylish-haskell"
+            "ghcVersion": "9.4.7",
+            "cabalVersion": "3.6.2.0",
+            "globalPackages": "hlint stylish-haskell",
+            "installHLS": true,
+            "downgradeGhcToSupportHls": true,
+            "installStack": true,
+            "installStackGHCupHook": true,
+            "adjustBas": true
         }
     },
     "customizations": {
