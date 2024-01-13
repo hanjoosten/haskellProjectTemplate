@@ -1,14 +1,14 @@
 cabal-version: 2.2
 
--- This file has been generated from package.yaml by hpack version 0.35.1.
+-- This file has been generated from package.yaml by hpack version 0.36.0.
 --
 -- see: https://github.com/sol/hpack
 
-name:           haskellProject
+name:           myHaskellProject
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/hanjoosten/haskellProject#readme>
-homepage:       https://github.com/hanjoosten/haskellProject#readme
-bug-reports:    https://github.com/hanjoosten/haskellProject/issues
+description:    Please see the README on GitHub at <https://github.com/hanjoosten/myHaskellProject#readme>
+homepage:       https://github.com/hanjoosten/myHaskellProject#readme
+bug-reports:    https://github.com/hanjoosten/myHaskellProject/issues
 author:         Han Joosten
 maintainer:     han.joosten.han@gmail.com
 copyright:      Han Joosten
@@ -21,15 +21,15 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/hanjoosten/haskellProject
+  location: https://github.com/hanjoosten/myHaskellProject
 
 library
   exposed-modules:
       Lib
   other-modules:
-      Paths_haskellProject
+      Paths_myHaskellProject
   autogen-modules:
-      Paths_haskellProject
+      Paths_myHaskellProject
   hs-source-dirs:
       src
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
@@ -37,31 +37,31 @@ library
       base >=4.7 && <5
   default-language: Haskell2010
 
-executable haskellProject-exe
+executable myHaskellProject-exe
   main-is: Main.hs
   other-modules:
-      Paths_haskellProject
+      Paths_myHaskellProject
   autogen-modules:
-      Paths_haskellProject
+      Paths_myHaskellProject
   hs-source-dirs:
       app
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , haskellProject
+    , myHaskellProject
   default-language: Haskell2010
 
-test-suite haskellProject-test
+test-suite myHaskellProject-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_haskellProject
+      Paths_myHaskellProject
   autogen-modules:
-      Paths_haskellProject
+      Paths_myHaskellProject
   hs-source-dirs:
       test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , haskellProject
+    , myHaskellProject
   default-language: Haskell2010
