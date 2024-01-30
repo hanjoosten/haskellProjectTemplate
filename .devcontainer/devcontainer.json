@@ -36,6 +36,9 @@
             }
         }
     },
+    "onCreateCommand": {
+        "build": "stack install haskell-dap ghci-dap haskell-debug-adapter"
+    },
     "updateContentCommand": {
         "build": "stack build --test --bench --no-run-tests --no-run-benchmarks"
     },
