@@ -40,7 +40,7 @@
         "build": "stack install haskell-dap ghci-dap haskell-debug-adapter"
     },
     "updateContentCommand": {
-        "build": "stack build --test --bench --no-run-tests --no-run-benchmarks"
+        "build": "stack build"
     },
     "hostRequirements": {
         "memory": "8gb",

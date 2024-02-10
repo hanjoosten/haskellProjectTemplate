@@ -1,10 +1,8 @@
 name: myHaskellProject
 version: 0.1.0.0
-github: "hanjoosten/myHaskellProject"
+github: "<yourName>/myHaskellProject"
 license: BSD-3-Clause
-author: "Han Joosten"
-maintainer: "han.joosten.han@gmail.com"
-copyright: "Han Joosten"
+author: "<yourName>"
 
 extra-source-files:
   - README.md
@@ -17,7 +15,7 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description: Please see the README on GitHub at <https://github.com/hanjoosten/myHaskellProject#readme>
+description: Please see the README on GitHub at <https://github.com/<yourName>/myHaskellProject#readme>
 
 dependencies:
   - base >= 4.7 && < 5
@@ -32,28 +30,14 @@ ghc-options:
   - -Wmissing-home-modules
   - -Wpartial-fields
   - -Wredundant-constraints
-
-library:
-  source-dirs: src
-
+  - -Wno-missing-signatures # Remove this, for it is nice to make types explicit
+  
 executables:
   myHaskellProject-exe:
     main: Main.hs
-    source-dirs: app
+    source-dirs: src
     ghc-options:
       - -threaded
       - -rtsopts
       - -with-rtsopts=-N
-    dependencies:
-      - myHaskellProject
 
-tests:
-  myHaskellProject-test:
-    main: Spec.hs
-    source-dirs: test
-    ghc-options:
-      - -threaded
-      - -rtsopts
-      - -with-rtsopts=-N
-    dependencies:
-      - myHaskellProject
