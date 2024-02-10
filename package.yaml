@@ -30,10 +30,12 @@ ghc-options:
   - -Wmissing-home-modules
   - -Wpartial-fields
   - -Wredundant-constraints
-  - -Wno-missing-signatures # Remove this, for it is nice to make types explicit
+# Below some options not to discurage people being introduced to Haskell
+  - -Wno-missing-signatures 
+  - -Wno-type-defaults
   
 executables:
-  myHaskellProject-exe:
+  myHaskellProject:
     main: Main.hs
     source-dirs: src
     ghc-options:

@@ -20,7 +20,8 @@
         "vscode": {
             "extensions": [
                 "haskell.haskell",
-                "phoityne.phoityne-vscode"
+                "phoityne.phoityne-vscode",
+                "rcook.ghci-helper"
             ],
             "settings": {
                 "editor.formatOnSave": true,

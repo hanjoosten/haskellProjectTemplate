@@ -22,7 +22,7 @@ source-repository head
   type: git
   location: https://github.com/<yourName>/myHaskellProject
 
-executable myHaskellProject-exe
+executable myHaskellProject
   main-is: Main.hs
   other-modules:
       Paths_myHaskellProject
@@ -30,7 +30,7 @@ executable myHaskellProject-exe
       Paths_myHaskellProject
   hs-source-dirs:
       src
-  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wno-missing-signatures -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -Wno-missing-signatures -Wno-type-defaults -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
   default-language: Haskell2010
