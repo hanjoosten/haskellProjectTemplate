@@ -38,6 +38,8 @@ executables:
   myHaskellProject:
     main: Main.hs
     source-dirs: src
+    default-extensions:
+    - OverloadedStrings
     ghc-options:
       - -threaded
       - -rtsopts
