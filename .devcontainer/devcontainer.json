@@ -17,6 +17,11 @@
         }
     },
     "customizations": {
+        "codespaces": {
+            "openFiles": [
+                "src/Main.hs"
+            ]
+        },
         "vscode": {
             "extensions": [
                 "haskell.haskell",
